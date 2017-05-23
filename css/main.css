@@ -285,6 +285,7 @@ footer {
   }
 
   #seccionFinalMovil {
+    display: block;
     width: 100%;
     background-color: rgb(41, 38, 42);
     color: #fff;
