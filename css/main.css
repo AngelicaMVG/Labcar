@@ -4,6 +4,7 @@ body {
   width: 100%;
   background-color: #f7b617;
 }
+
 .navbar {
   padding: 2%;
   background-color: #fff;
@@ -16,7 +17,7 @@ body {
   width: 100%;
   max-height: 1200px;
   display: block;
-  margin-top:-70%;
+  margin-top: -70%;
   padding-top: 140%;
 }
 
@@ -31,12 +32,16 @@ body {
 
 #btnRegistrate, #btnConductor {
   color: #000;
-  background-color:rgb(240, 236, 239) ;
+  background-color: rgb(240, 236, 239);
 }
-
+.m {
+  margin: 5%;
+  color: #fff;
+}
 .mt {
   margin-top: 5%;
 }
+
 .espacio {
   color: #fff;
   max-width: 400px;
@@ -44,23 +49,23 @@ body {
 }
 
 .espacio::after {
-   content: "O bien";
-   display: inline-block;
-   position: relative;
-   top: .1em;
-   font-size: 1em;
-   padding: 0 4em;
-   background:#FCB425;
-   top: -10px;
-   color: #fff;
+  content: "O bien";
+  display: inline-block;
+  position: relative;
+  top: .1em;
+  font-size: 1em;
+  padding: 0 4em;
+  background: #FCB425;
+  top: -10px;
+  color: #fff;
 }
 
-#descargaApp {
+#infoApp {
   width: 100%;
   padding: 0;
 }
 
-.app {
+.infoAplicacion {
   margin: 5% 10% 5% 0;
   padding: 2%;
   border: 2px solid #fff;
@@ -92,18 +97,21 @@ body {
   color: inherit;
   background: #f7b617;
 }
+
 .ml {
   margin-left: 20%;
 }
+
 .consultaTarifas {
   padding: 10%;
   color: #fff;
 }
-h3+ p {
+
+h3+p {
   margin-bottom: 7%;
 }
 
-img + input {
+img+input {
   width: 60%;
   border-radius: 10px;
   padding: 1%;
@@ -112,6 +120,7 @@ img + input {
   color: #fff;
   margin-left: 5%;
   margin-bottom: 7%;
+  outline-style: none;
 }
 
 .trazaRuta {
@@ -119,6 +128,7 @@ img + input {
   background-color: #fff;
   width: 40%;
 }
+
 .mapa {
   border: 2px solid #fff;
   width: 100%;
@@ -134,7 +144,6 @@ img + input {
   width: 100%;
   height: 100%;
 }
-
 
 #seccionFinal {
   width: 100%;
@@ -159,8 +168,7 @@ li>a {
   color: inherit;
 }
 
-
-.p-2 >img {
+.p-2>img {
   width: 50%;
   margin-bottom: 5%;
 }
@@ -172,6 +180,7 @@ li>a {
 .imgContacto {
   margin-top: 25%;
 }
+
 a>i {
   color: #fff;
   margin-left: 2%;
@@ -181,4 +190,130 @@ footer {
   padding: 0;
   margin-top: 2%;
   font-size: .9em;
+}
+
+.App, .lanuevaApp, .conduceMobil, #seccionFinalMovil{
+  display: none;
+}
+
+@media  (max-width: 787px) {
+  #Inicio {
+    margin-top: -70%;
+    padding-top: 200%;
+  }
+
+  .forma {
+    display: none;
+  }
+  .App {
+    display: block;
+  }
+  .App {
+    width: 80%;
+    background-color: #FCB425;
+    color: #fff;
+    line-height: 1.3;
+    margin-top: -90%;
+    padding: 5% 10%;
+    position: absolute;
+    right: 0;
+  }
+
+  .descargaApp {
+    margin-top: 10%;
+    width: 60%;
+  }
+  h1>small {
+    color: #fff;
+  }
+  .lanuevaApp {
+    display: block;
+  }
+  .infoAplicacion {
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+    padding: 2%;
+    border: 2px solid #fff;
+    line-height: 1.5;
+    font-size: 1.2em;
+    color: #fff;
+  }
+
+  #conductores {
+    display: block;
+    padding-top: 80%;
+    position: relative;
+  }
+
+  .conduceForm, #seccionFinal, .nuevaApp {
+  display: none;
+  }
+
+  .conduceMobil {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(21, 21, 22, 0.64);
+    color: #fff;
+    position: absolute;
+    top: 0;
+    padding-top: 10%;
+    padding-bottom: 5%;
+  }
+
+  .consultaTarifas{
+    padding: 0;
+  }
+  h3+p {
+    font-size: 1.5em;
+  }
+
+  img+input {
+    width: 70%;
+  }
+
+  .trazaRuta {
+    font-size: 1.1em;
+    margin: 0 5%;
+  }
+
+  .mapa {
+    width: 80%;
+    padding-bottom: 50%;
+    margin: 10% 0;
+  }
+
+  #seccionFinalMovil {
+    width: 100%;
+    background-color: rgb(41, 38, 42);
+    color: #fff;
+    font-size: 1.5em;
+  }
+
+  .containerFinal {
+    padding:  0;
+    margin: 2%;
+  }
+  .lista {
+    padding: 3% 0;
+    font-size: .7em;
+    line-height: 2.5;
+  }
+
+  .redSocial {
+    padding: 3% 0;
+    font-size: .8em;
+  }
+
+  .p-2>img {
+    width: 30%;
+    margin-top: 1%;
+  }
+
+  footer {
+    font-size: .7em;
+    padding-top: 2%;
+  }
+
 }
