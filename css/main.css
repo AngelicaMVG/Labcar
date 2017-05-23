@@ -1,6 +1,8 @@
 body {
   padding: 0;
   margin: 0;
+  width: 100%;
+  background-color: #f7b617;
 }
 .navbar {
   padding: 2%;
@@ -50,4 +52,42 @@ body {
    background:#FCB425;
    top: -10px;
    color: #fff;
+}
+
+#descargaApp {
+  width: 100%;
+  padding: 0;
+}
+
+.app {
+  margin: 5% 10% 5% 0;
+  padding: 2%;
+  border: 2px solid #fff;
+  line-height: 1.5;
+  font-size: 1.2em;
+  color: #fff;
+}
+
+#conductores {
+  background-image: url(../img/conduce.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  display: block;
+  padding-top: 40%;
+  position: relative;
+}
+
+.conduceForm {
+  position: absolute;
+  top: 0;
+  padding-top: 10%;
+  padding-bottom: 5%;
+  background-color: rgba(21, 21, 22, 0.64);
+  color: #fff;
+}
+
+.btnConductor {
+  color: inherit;
+  background: #f7b617;
 }
