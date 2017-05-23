@@ -316,5 +316,35 @@ footer {
     font-size: .7em;
     padding-top: 2%;
   }
-
 }
+
+/*TERMINA MEDIAQUERY empiezan modales*/
+
+#myModalRegistrate {
+  display: none;
+  width: 40%;
+  background-color: #F2F2F4;
+  color: #fff;
+}
+
+.registrate {
+  margin-top: 5%;
+  padding: 3% 5%;
+  background-color: #000;
+}
+
+.cuentaNueva {
+  color: #B5C0CB;
+}
+ .formaRegistro {
+   padding: 5%;
+ }
+
+ .formaRegistro >div {
+   margin-bottom: 5%;
+   font-size: 1em;
+ }
+
+ .btn-block {
+   background-color: #00BBD3;
+ }
