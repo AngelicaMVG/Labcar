@@ -44,7 +44,7 @@
         <form action="" class="forma">
           <h1>Disfruta del viaje <br> Eres dueño de tu tiempo</h1>
           <h3>Viaja con Lab<i class="glyphicon glyphicon-chevron-left"></i>ar</h3>
-          <button id="btnRegistrate" class="btn btn-md mt">Registrate</button>
+          <button id="btnRegistrate" class="btn btn-md mt" data-toggle="modal" data-target="#myModalRegistrate">Registrate</button>
           <hr class="espacio mt">
           <button id="btnConductor" class="btn btn-md mt">Conviertete en un conductor</button>
         </form>
@@ -223,49 +223,55 @@
 
 
   </section>
-  <section id="myModalRegistrate" class="container">
-    <div class="registrate text-center">
-      <h3>YA TIENES UNA CUENTA?</h3>
+
+  <div class="modal fade" id="myModalRegistrate" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="registrate text-center">
+            <h3>YA TIENES UNA CUENTA?</h3>
+          </div>
+          <div class="text-center cuentaNueva">
+            <h3> O CREA UNA CUENTA NUEVA.</h3>
+          </div>
+          <form action="" class="formaRegistro">
+            <div>
+              <input type="text" placeholder="Nombre">
+              <input type="text" placeholder="Apellido">
+            </div>
+            <div class="block">
+              <input type="text" placeholder="Correo electronico: name@example.com">
+            </div>
+            <div>
+              <input type="text" placeholder="Telefono">
+            </div>
+            <div>
+              <input type="text" placeholder="Contraseña">
+            </div>
+            <div>
+              <input type="text" placeholder="Ciudad">
+            </div>
+            <div>
+              <input type="text" placeholder="(Opcional) Codigo de Invitacion">
+            </div>
+            <div class="dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            Como te enteraste de nuestra pagina?<span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div>
+            <button type="button" name="button" class="btn btn-block">Enviar</button>
+          </form>
+        </div>
+      </div>
     </div>
-    <div class="text-center cuentaNueva">
-      <h3> O CREA UNA CUENTA NUEVA.</h3>
-    </div>
-    <form action="" class="formaRegistro">
-      <div>
-        <input type="text" placeholder="Nombre">
-        <input type="text" placeholder="Apellido">
-      </div>
-      <div class="block">
-        <input type="text" placeholder="Correo electronico: name@example.com">
-      </div>
-      <div>
-        <input type="text" placeholder="Telefono">
-      </div>
-      <div>
-        <input type="text" placeholder="Contraseña">
-      </div>
-      <div>
-        <input type="text" placeholder="Ciudad">
-      </div>
-      <div>
-        <input type="text" placeholder="(Opcional) Codigo de Invitacion">
-      </div>
-      <div class="dropdown">
-        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-    Como te enteraste de nuestra pagina?
-    <span class="caret"></span>
-  </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-          <li><a href="#">Action</a></li>
-          <li><a href="#">Another action</a></li>
-          <li><a href="#">Something else here</a></li>
-          <li role="separator" class="divider"></li>
-          <li><a href="#">Separated link</a></li>
-        </ul>
-      </div>
-      <button type="button" name="button" class="btn btn-block">Enviar</button>
-    </form>
-  </section>
+  </div>
 
 
   <script src="js/main.js"></script>

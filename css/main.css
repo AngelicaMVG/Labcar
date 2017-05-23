@@ -321,8 +321,7 @@ footer {
 /*TERMINA MEDIAQUERY empiezan modales*/
 
 #myModalRegistrate {
-  display: none;
-  width: 40%;
+  width: 100%;
   background-color: #F2F2F4;
   color: #fff;
 }
