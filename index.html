@@ -14,7 +14,7 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav id="nav" class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -31,7 +31,7 @@
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#Inicio">Viaja</a></li>
             <li><a href="#conductores">Conduce</a></li>
-            <li><a href="#">Inicia Sesion</a></li>
+            <li><button class="btn" data-toggle="modal" data-target="#myModalIniciaSesion">Inicia Sesion</button></li>
           </ul>
         </div>
     </nav>
@@ -88,6 +88,7 @@
         <p>Labcar es una opcion flexible para alcanzar tus metas financieras.</p>
         <button class="btn btl-md btnConductor">Conviertete en conductor</button>
       </div>
+      <!--version movil-->
       <div class="conduceMobil">
         <div class="m">
           <h3>Conduce cuando quieras</h3>
@@ -219,9 +220,33 @@
   </section>
 
   <!--seccion Modales-->
-  <section id="myModalIniciaSesion" class="container">
-
-
+  <section id="myModalIniciaSesion" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <div class="text-center green">
+            <form action="">
+              <img src="img/perfil.png" alt="..." class="img-circle img-perfil">
+              <div class="formIniciaSesion ">
+                <div class="input-group">
+                  <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
+                  <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group">
+                  <span class="input-group-addon" id="basic-addon1"><i class="fa fa-lock"></i></span>
+                  <input type="text" class="form-control" placeholder="Password" aria-describedby="basic-addon1">
+                </div>
+                <div>
+                  <button>LOGIN</button>
+                </div>
+                <p>Forgot Password<a href="#">Click Here!</a></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <div class="modal fade" id="myModalRegistrate" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">

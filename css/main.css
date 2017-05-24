@@ -10,6 +10,12 @@ body {
   background-color: #fff;
 }
 
+.btn {
+  background-color: #fff;
+  outline-style: none;
+  margin-top: 7%;
+}
+
 #Inicio {
   background-image: url(../img/taxi.jpg);
   background-size: cover;
@@ -346,4 +352,27 @@ footer {
 
  .btn-block {
    background-color: #00BBD3;
+ }
+
+ .img-perfil {
+   border: 2px solid #000;
+ }
+
+ .green {
+   background-color: rgb(39, 185, 73);
+ }
+
+ .nav-nuevo {
+   background: rgba(34, 30, 32, 0.78);
+   color: #000;
+   position: fixed;
+   height: 109px;
+   left: 0;
+   top: 0;
+ }
+
+ .input-group {
+   margin-top: 8%;
+   margin-left: 15%;
+   width: 70%;
  }
